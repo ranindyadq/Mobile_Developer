@@ -6,11 +6,18 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Application Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Here are some screenshots of the application in action:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### First Screen
+
+![First Screen Screenshot](screenshots\first_screen1.jpg,screenshots\first_screen1.jpg)
+
+### Second Screen
+
+![Second Screen Screenshot](screenshots/second_screen1.jpg,screenshots/second_screen2.jpg)
+
+### Third Screen (User List with Pagination)
+
+![Third Screen Screenshot](screenshots/third_screen.jpg)
