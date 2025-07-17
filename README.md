@@ -12,11 +12,13 @@ Here are some screenshots of the application in action:
 
 ### First Screen
 
-![First Screen Screenshot](screenshots\first_screen1.jpg,screenshots\first_screen1.jpg)
+![First Screen Screenshot](screenshots\first_screen1.jpg)
+![First Screen Screenshot](screenshots\first_screen2.jpg)
 
 ### Second Screen
 
-![Second Screen Screenshot](screenshots/second_screen1.jpg,screenshots/second_screen2.jpg)
+![Second Screen Screenshot](screenshots/second_screen1.jpg)
+![Second Screen Screenshot](screenshots/second_screen2.jpg)
 
 ### Third Screen (User List with Pagination)
 
