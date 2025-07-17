@@ -12,24 +12,45 @@ class SecondScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text(
-          'Second Screen',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w600,
-            fontSize: 18,
-            color: Color(0xFF04021D),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(
+          kToolbarHeight,
+        ), // Tinggi standar AppBar
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white, // Latar belakang AppBar
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(
+                  0.1,
+                ), // Warna bayangan (bisa disesuaikan)
+                spreadRadius: 0, // Seberapa menyebar bayangan
+                blurRadius: 4, // Seberapa buram bayangan
+                offset: const Offset(0, 2), // Posisi bayangan (x, y)
+              ),
+            ],
           ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          child: AppBar(
+            title: const Text(
+              'Second Screen',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w600,
+                fontSize: 18,
+                color: Color(0xFF04021D),
+              ),
+            ),
+            centerTitle: true,
+            backgroundColor: Colors
+                .transparent, // AppBar harus transparan karena warna di Container
+            elevation: 0, // Pastikan elevation di sini 0
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ),
         ),
       ),
       body: Stack(
@@ -39,7 +60,7 @@ class SecondScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: screenHeight * 0.010),
+                SizedBox(height: screenHeight * 0.02),
 
                 const Text(
                   'Welcome',
