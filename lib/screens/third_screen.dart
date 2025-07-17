@@ -48,18 +48,18 @@ class _ThirdScreenState extends State<ThirdScreen> {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(
           kToolbarHeight,
-        ), // Tinggi standar AppBar
+        ), 
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white, // Latar belakang AppBar
+            color: Colors.white, 
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(
                   0.1,
-                ), // Warna bayangan (bisa disesuaikan)
-                spreadRadius: 0, // Seberapa menyebar bayangan
-                blurRadius: 4, // Seberapa buram bayangan
-                offset: const Offset(0, 2), // Posisi bayangan (x, y)
+                ), 
+                spreadRadius: 0, 
+                blurRadius: 4, 
+                offset: const Offset(0, 2), 
               ),
             ],
           ),
@@ -75,8 +75,8 @@ class _ThirdScreenState extends State<ThirdScreen> {
             ),
             centerTitle: true,
             backgroundColor: Colors
-                .transparent, // AppBar harus transparan karena warna di Container
-            elevation: 0, // Pastikan elevation di sini 0
+                .transparent, 
+            elevation: 0, 
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
               onPressed: () {
@@ -209,7 +209,6 @@ class _ThirdScreenState extends State<ThirdScreen> {
                       ),
                     );
                   } else {
-                    // Indikator loading di bagian paling bawah
                     return const Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Center(child: CircularProgressIndicator()),
