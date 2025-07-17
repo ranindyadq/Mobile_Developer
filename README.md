@@ -12,8 +12,8 @@ Here are some screenshots of the application in action:
 
 ### First Screen
 
-![First Screen Screenshot](screenshots\first_screen1.jpg)
-![First Screen Screenshot](screenshots\first_screen2.jpg)
+![First Screen Screenshot](screenshots/first_screen1.jpg)
+![First Screen Screenshot](screenshots/first_screen2.jpg)
 
 ### Second Screen
 
