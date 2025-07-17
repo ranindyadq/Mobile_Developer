@@ -47,6 +47,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
+<<<<<<< HEAD
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Container(
           decoration: BoxDecoration(
@@ -57,6 +58,22 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 spreadRadius: 0,
                 blurRadius: 4,
                 offset: const Offset(0, 2),
+=======
+        preferredSize: const Size.fromHeight(
+          kToolbarHeight,
+        ), 
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white, 
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(
+                  0.1,
+                ), 
+                spreadRadius: 0, 
+                blurRadius: 4, 
+                offset: const Offset(0, 2), 
+>>>>>>> 567e9cbe7fb7f192fc1355a383422cf1873e4846
               ),
             ],
           ),
@@ -71,8 +88,14 @@ class _ThirdScreenState extends State<ThirdScreen> {
               ),
             ),
             centerTitle: true,
+<<<<<<< HEAD
             backgroundColor: Colors.transparent,
             elevation: 0,
+=======
+            backgroundColor: Colors
+                .transparent, 
+            elevation: 0, 
+>>>>>>> 567e9cbe7fb7f192fc1355a383422cf1873e4846
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
               onPressed: () {
