@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:application/providers/app_state_provider.dart';
 import 'package:application/screens/third_screen.dart';
@@ -13,20 +14,16 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(
-          kToolbarHeight,
-        ), // Tinggi standar AppBar
+        preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white, // Latar belakang AppBar
+            color: Colors.white,
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(
-                  0.1,
-                ), // Warna bayangan (bisa disesuaikan)
-                spreadRadius: 0, // Seberapa menyebar bayangan
-                blurRadius: 4, // Seberapa buram bayangan
-                offset: const Offset(0, 2), // Posisi bayangan (x, y)
+                color: Colors.black.withOpacity(0.1),
+                spreadRadius: 0,
+                blurRadius: 4,
+                offset: const Offset(0, 2),
               ),
             ],
           ),
@@ -41,14 +38,18 @@ class SecondScreen extends StatelessWidget {
               ),
             ),
             centerTitle: true,
-            backgroundColor: Colors
-                .transparent, // AppBar harus transparan karena warna di Container
-            elevation: 0, // Pastikan elevation di sini 0
+            backgroundColor: Colors.transparent,
+            elevation: 0,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
               onPressed: () {
                 Navigator.pop(context);
               },
+            ),
+            systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(
+              statusBarColor: Colors.white,
+              statusBarIconBrightness: Brightness.dark,
+              statusBarBrightness: Brightness.light,
             ),
           ),
         ),
